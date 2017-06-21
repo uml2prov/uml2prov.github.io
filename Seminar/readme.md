@@ -10,7 +10,7 @@ Here, we provide the following suplementary material:
 
 Such a case study has been modelled through the following UML Sequence and State Machine Diagrams.
 
-##UML Sequence diagrams
+## UML Sequence diagrams
 
 ![](https://github.com/uml2prov/uml2prov.github.io/blob/master/Seminar/UML%20diagrams/sequenceDiagrams/enrol%20Student.png "Enrol student UML Sequence diagram")
 
