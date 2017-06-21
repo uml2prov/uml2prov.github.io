@@ -2,8 +2,17 @@
 
 In this page, we present supporting material of the paper entitled "UML2PROV: Automating Provenance Capture in Software Engineering" submitted to the 44th International Conference on Current Trends in Theory and Practice of Computer Science. January 29 - February 2, 2018 | Krems an der Donau, Austria.
 
+* [OCL Constraints]
 * [Translation rules](https://github.com/uml2prov/uml2prov.github.io/blob/master/README.md#translation-rules)
 * [Evaluation dataset](https://github.com/uml2prov/uml2prov.github.io/blob/master/README.md#evaluation-dataset)
+
+
+## OCL Constraints
+
+(OCL1-2) Each sender of a message in an interaction of a SqD must be an object modelled by a SMD. The same constraint is defined for a receiver, changing sender by receiver.
+
+context: Interaction
+inv: self.message.sender.base.behavior -> notEmpty ()
 
 
 ## Translation rules
