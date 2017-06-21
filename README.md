@@ -1,6 +1,6 @@
 # SOFSEM 2018 - SUPLEMENTARY Material
 
-In this page, we present supporting material of the paper entitled "UML2PROV: Automating Provenance Capture in Software Engineering" submitted to the 11th Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering PADERBORN, GERMANY, September 04 – 08.
+In this page, we present supporting material of the paper entitled "UML2PROV: Automating Provenance Capture in Software Engineering" submitted to the 44th International Conference on Current Trends in Theory and Practice of Computer Science PADERBORN, GERMANY, September 04 – 08.
 
 * [Translation rules](https://github.com/uml2prov/uml2prov.github.io/blob/master/README.md#translation-rules)
 * [Evaluation dataset](https://github.com/uml2prov/uml2prov.github.io/blob/master/README.md#evaluation-dataset)
