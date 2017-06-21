@@ -9,12 +9,112 @@ In this page, we present supporting material of the paper entitled "UML2PROV: Au
 
 ## OCL Constraints
 
-(OCL1-2) Each sender of a message in an interaction of a SqD must be an object modelled by a SMD. The same constraint is defined for a receiver, changing sender by receiver.
+**(OCL1-2) Each sender of a message in an interaction of a SqD must be an object modelled by a SMD. The same constraint is defined for a receiver, changing sender by receiver.**
 
 ```
 context: Interaction
 inv: self.message.sender.base.behavior -> notEmpty ()
 ```
+
+**(OCL3) Incoming messages to an object within a SqD are events in a SMD.**
+```
+context: Message
+inv: self.receiver.base.behavior.region.transition.trigger-> exists(e| e.name=self.name)
+```
+
+**(OCL4) Outgoing messages of an object within a SqD are actions in a SMD.**
+```
+context: Message
+inv: self.sender.base.behavior.region.transition.effect-> exists(e| e.name=self.name )
+
+```
+
+**(OCL5) Incoming messages of an object (receiver) within SqD must be object's methods.**
+
+```
+context: Message
+inv: let rec:ClassifiedRole = self.receiver in
+          let ops:Operation = rec.base.ownedOperation in
+          ops -> exists(oper| oper.name = self.name)
+```
+
+
+First, constraints from OCL1 to OCL5 model the consistency requirements
+to be checked in our source SqD and SMD diagrams. The
+consistency between UML Diagrams has been already addressed in
+the literature [2, 4, 18, 31]. In particular, the approaches that tackle
+the consistency between SqD and SMD diagrams [4, 18, 31] share
+the same considerations to be checked in the diagrams, describing
+them using natural language, mathematical-based formulas, or a
+mixture of them. In contrast, we have decided to provide such
+considerations as well-formedness rules expressed in OCL, in order
+to be coherent with the way in which UML defines its semantics.
+ese constraints (from OCL1 to OCL5) mainly impose interconnections
+among (OCL1 and OCL2) senders/receivers in SqD and objects
+modelled by SMD, (OCL3 and OCL4) incoming/outgoing messages in
+SqD with events/actions in SMD, and (OCL5) incoming messages in
+SqD with methods in objects modelled by SMD. In order to provide
+a basis to understand these constraints, next we explain in detail
+OCL1 which states that “each sender of a message in an interaction
+of a SqD diagram must be an object modelled by a SMD diagram.”
+This constraint defines a restriction on SqD’s interactions, so its
+context corresponds to the UML Interaction element. Since
+we need to make sure that each sender of a message must have
+an associated SMD diagram, we navigate from each interaction
+(self), to its associated message, and obtain its sender. Later, we
+obtain the class of such a sender (role base). Finally, we achieve the
+state machine associated to the sender’s object (identified by the
+role behavior), ensuring that the result is not empty (notEmpty
+operation).
+
+
+**(OCL6) If a message has a signature, it must be an operation.**
+
+```
+context: Message
+inv: self.signature ->notEmpty ()
+      implies self.signature.oclIsKindOf (Operation)
+```
+
+Regarding SqD diagrams, we have defined the constraint labelled
+OCL6 in Figure 4 to make sure that when a message includes a signature,
+such signature must correspond to an operation (instead of
+a signal). The approach presented in this paper considers operation
+messages, but it could be easily extended to include signals.
+
+
+
+
+**(OCL7) No submachine states are considered as valid states in a SMD.**
+
+```
+context: State
+inv: not self.isSubmachineState()
+```
+
+Since submachine states are semantically equivalent
+to composite states [26], we have not considered these kind of
+states in this paper. This aspect is modelled by means of constraint
+OCL7.
+
+
+**(OCL8-16) Only initial pseudostates are considered as valid pseudostates in a SMD. Parameter \<kind> must be substituted by: deep/ shallowHistory, join, fork, junction, choice, entry/exitPoint and terminate.**
+
+```
+context: Transition
+inv: not self.source.oclAstype (Pseudostate ).kind = PseudostateKind ::<kind> and
+     not self.target.oclAstype (Pseudostate ).kind = PseudostateKind ::<kind>
+
+
+```
+Constraints from OCL8 to OCL16
+ensure that the remainder kinds of pseudostate elements can not
+be source/target vertices. Such constraints share a same pattern
+(see OCL8-16 in Figure 4), where the parameter <kind> must be
+substituted by each pseudostate not considered by UML2PROV (see
+definition OCL8-16).
+
+
 
 ## Translation rules
 
