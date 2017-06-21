@@ -2,8 +2,8 @@
 
 In this page, we present supporting material of the paper entitled "UML2PROV: Automating Provenance Capture in Software Engineering" submitted to the 11th Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering PADERBORN, GERMANY, September 04 – 08.
 
-* [Translation rules](https://github.com/uml2prov/esec-fse/blob/master/README.md#translation-rules)
-* [Evaluation dataset](https://github.com/uml2prov/esec-fse/blob/master/README.md#evaluation-dataset)
+* [Translation rules](https://github.com/uml2prov/uml2prov.github.io/blob/master/README.md#translation-rules)
+* [Evaluation dataset](https://github.com/uml2prov/uml2prov.github.io/blob/master/README.md#evaluation-dataset)
 
 
 ## Translation rules
@@ -39,11 +39,11 @@ Here we present a complete description of the rules used to mapping UML Sequence
 
 In this section we provide the dataset which includes the relevant documents related to the case studies used in "Analysis and Discussion" section. 
 
-* [Seminar](https://github.com/uml2prov/esec-fse/tree/master/Seminar)
-* [Water](https://github.com/uml2prov/esec-fse/tree/master/Water)
+* [Seminar](https://github.com/uml2prov/uml2prov.github.io/tree/master/Seminar)
+* [Water](https://github.com/uml2prov/uml2prov.github.io/tree/master/Water)
 * [Model View Controller (MVC)](https://github.com/uml2prov/esec-fse/tree/master/MVC) 
-* [PhoneCall](https://github.com/uml2prov/esec-fse/tree/master/PhoneCall)
-* [Elevator](https://github.com/uml2prov/esec-fse/tree/master/Elevator)
+* [PhoneCall](https://github.com/uml2prov/uml2prov.github.io/tree/master/PhoneCall)
+* [Elevator](https://github.com/uml2prov/uml2prov.github.io/tree/master/Elevator)
 
 
 
