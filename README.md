@@ -11,9 +11,10 @@ In this page, we present supporting material of the paper entitled "UML2PROV: Au
 
 (OCL1-2) Each sender of a message in an interaction of a SqD must be an object modelled by a SMD. The same constraint is defined for a receiver, changing sender by receiver.
 
+```
 context: Interaction
 inv: self.message.sender.base.behavior -> notEmpty ()
-
+```
 
 ## Translation rules
 
