@@ -1,0 +1,10 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.org/>
+prefix exe <http://example.org/>
+
+activity(exe:pickUp_1,2017-02-27T17:17:52.000+01:00,2017-02-27T17:17:52.000+01:00,[prov:type = 'u2p:pickUp'])
+agent(exe:dataset.caseStudy.CS4PhoneCall.User@,[prov:type = 'u2p:User'])
+wasAssociatedWith(exe:pickUp_1,exe:dataset.caseStudy.CS4PhoneCall.User@,-)
+endBundle
+endDocument

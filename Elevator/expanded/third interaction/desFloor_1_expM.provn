@@ -1,0 +1,19 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.example.org/>
+prefix exe <http://example.org/>
+
+agent(exe:DriveControl@6d00a15d,[prov:type = 'u2p:DriveControl'])
+entity(exe:DriveControl@6d00a15d_0,[prov:type = 'u2p:StateMachine'])
+wasAttributedTo(exe:DriveControl@6d00a15d_0, exe:DriveControl@6d00a15d)
+entity(exe:DriveControl@6d00a15d_3,[prov:type = 'u2p:DriveControl', u2p:state = 'u2p:Moving'])
+specializationOf(exe:DriveControl@6d00a15d_3,exe:DriveControl@6d00a15d_0)
+wasGeneratedBy(exe:DriveControl@6d00a15d_3,exe:desiredFloor_1,-)
+wasDerivedFrom(exe:DriveControl@6d00a15d_3, exe:DriveControl@6d00a15d_2)
+entity(exe:DriveControl@6d00a15d_2,[prov:type = 'u2p:DriveControl', u2p:state = 'u2p:Stopped'])
+wasInvalidatedBy(exe:DriveControl@6d00a15d_2,exe:desiredFloor_1,-)
+activity(exe:desiredFloor_1,2017-02-28T17:59:56.000+01:00,2017-02-28T17:59:56.000+01:00,[prov:type = 'u2p:desiredFloor'])
+used(exe:desiredFloor_1,exe:DriveControl@6d00a15d_2,-)
+specializationOf(exe:DriveControl@6d00a15d_2,exe:DriveControl@6d00a15d_0)
+endBundle
+endDocument

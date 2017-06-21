@@ -1,0 +1,19 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.example.org/>
+prefix exe <http://example.org/>
+
+agent(exe:CarPositionControl@100fc185,[prov:type = 'u2p:CarPositionControl'])
+entity(exe:CarPositionControl@100fc185_0,[prov:type = 'u2p:StateMachine'])
+wasAttributedTo(exe:CarPositionControl@100fc185_0, exe:CarPositionControl@100fc185)
+entity(exe:CarPositionControl@100fc185_2,[prov:type = 'u2p:CarPositionControl', u2p:state = 'u2p:IndicatingCurrentFloor'])
+specializationOf(exe:CarPositionControl@100fc185_2,exe:CarPositionControl@100fc185_0)
+wasGeneratedBy(exe:CarPositionControl@100fc185_2,exe:doorOpened_1,-)
+wasDerivedFrom(exe:CarPositionControl@100fc185_2, exe:CarPositionControl@100fc185_1)
+entity(exe:CarPositionControl@100fc185_1,[prov:type = 'u2p:CarPositionControl', u2p:state = 'u2p:Idle'])
+wasInvalidatedBy(exe:CarPositionControl@100fc185_1,exe:doorOpened_1,-)
+activity(exe:doorOpened_1,2017-02-28T17:59:56.000+01:00,2017-02-28T17:59:56.000+01:00,[prov:type = 'u2p:doorOpened'])
+used(exe:doorOpened_1,exe:CarPositionControl@100fc185_1,-)
+specializationOf(exe:CarPositionControl@100fc185_1,exe:CarPositionControl@100fc185_0)
+endBundle
+endDocument

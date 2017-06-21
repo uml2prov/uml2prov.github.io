@@ -1,0 +1,19 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.example.org/>
+prefix exe <http://example.org/>
+
+agent(exe:Drive@36d4b5c,[prov:type = 'u2p:Drive'])
+entity(exe:Drive@36d4b5c_0,[prov:type = 'u2p:StateMachine'])
+wasAttributedTo(exe:Drive@36d4b5c_0, exe:Drive@36d4b5c)
+entity(exe:Drive@36d4b5c_2,[prov:type = 'u2p:Drive', u2p:state = 'u2p:Stopped'])
+specializationOf(exe:Drive@36d4b5c_2,exe:Drive@36d4b5c_0)
+wasGeneratedBy(exe:Drive@36d4b5c_2,exe:stop_1,-)
+wasDerivedFrom(exe:Drive@36d4b5c_2, exe:Drive@36d4b5c_1)
+entity(exe:Drive@36d4b5c_1,[prov:type = 'u2p:Drive', u2p:state = 'u2p:Moving'])
+wasInvalidatedBy(exe:Drive@36d4b5c_1,exe:stop_1,-)
+activity(exe:stop_1,2017-02-28T17:59:56.000+01:00,2017-02-28T17:59:56.000+01:00,[prov:type = 'u2p:stop'])
+used(exe:stop_1,exe:Drive@36d4b5c_1,-)
+specializationOf(exe:Drive@36d4b5c_1,exe:Drive@36d4b5c_0)
+endBundle
+endDocument

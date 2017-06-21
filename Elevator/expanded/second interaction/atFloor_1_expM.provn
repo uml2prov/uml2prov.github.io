@@ -1,0 +1,19 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.example.org/>
+prefix exe <http://example.org/>
+
+agent(exe:DoorControl@100fc185,[prov:type = 'u2p:DoorControl'])
+entity(exe:DoorControl@100fc185_0,[prov:type = 'u2p:StateMachine'])
+wasAttributedTo(exe:DoorControl@100fc185_0, exe:DoorControl@100fc185)
+entity(exe:DoorControl@100fc185_2,[prov:type = 'u2p:DoorControl', u2p:state = 'u2p:Motoropen'])
+specializationOf(exe:DoorControl@100fc185_2,exe:DoorControl@100fc185_0)
+wasGeneratedBy(exe:DoorControl@100fc185_2,exe:atFloor_1,-)
+wasDerivedFrom(exe:DoorControl@100fc185_2, exe:DoorControl@100fc185_1)
+entity(exe:DoorControl@100fc185_1,[prov:type = 'u2p:DoorControl', u2p:state = 'u2p:MotorStop/Open'])
+wasInvalidatedBy(exe:DoorControl@100fc185_1,exe:atFloor_1,-)
+activity(exe:atFloor_1,2017-02-28T18:02:07.000+01:00,2017-02-28T18:02:07.000+01:00,[prov:type = 'u2p:atFloor'])
+used(exe:atFloor_1,exe:DoorControl@100fc185_1,-)
+specializationOf(exe:DoorControl@100fc185_1,exe:DoorControl@100fc185_0)
+endBundle
+endDocument

@@ -1,0 +1,23 @@
+        
+       
+        
+                document
+                    
+                prefix prov <http://www.w3.org/ns/prov#>
+                prefix tmpl <http://openprovenance.org/tmpl#>
+                prefix var <http://openprovenance.org/var#>
+                prefix exe <http://example.org/>
+                prefix u2p <http://uml2prov.example.org/>
+    
+                    bundle exe:bundle1
+                         agent(var:objectSMD, [prov:type='u2p:Drive'])
+                        entity(var:object, [prov:type='u2p:StateMachine'])
+                         wasAttributedTo(var:object, var:objectSMD, [])
+                         entity(var:target, [prov:type='u2p:Drive' , u2p:state= 'u2p:Stopped'])
+                         activity(var:event, [prov:type = 'u2p:initStopped', tmpl:startTime = 'var:eventStartTime', tmpl:endTime = 'var:eventEndTime' ])
+                         wasGeneratedBy(var:target, var:event, -)
+                         specializationOf(var:target,var:object)
+                    endBundle
+                endDocument
+            
+        

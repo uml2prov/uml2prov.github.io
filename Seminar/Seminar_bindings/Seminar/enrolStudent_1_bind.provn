@@ -1,0 +1,21 @@
+document
+prefix tmpl <http://openprovenance.org/tmpl#>
+prefix var <http://openprovenance.org/var#>
+prefix exe <http://example.org/>
+entity(var:input0value,[tmpl:2dvalue_0_0 = "dataset.caseStudy.CS1Seminar.Student@50c87b21" %% xsd:string])
+entity(var:input0,[tmpl:value_0 = 'exe:$Proxy0@5f375618_0'])
+entity(var:output0value,[tmpl:2dvalue_0_0 = "true" %% xsd:string])
+entity(var:output0,[tmpl:value_0 = 'exe:Boolean@1810399e_0'])
+entity(var:message,[tmpl:value_0 = 'exe:enrolStudent_1'])
+entity(var:messageStartTime,[tmpl:2dvalue_0_0 = "2017-02-27T12:44:40" %% xsd:dateTime])
+entity(var:messageEndTime,[tmpl:2dvalue_0_0 = "2017-02-27T12:44:40" %% xsd:dateTime])
+entity(var:event,[tmpl:value_0 = 'exe:enrolStudent_1'])
+entity(var:eventStartTime,[tmpl:2dvalue_0_0 = "2017-02-27T12:44:40" %% xsd:dateTime])
+entity(var:eventEndTime,[tmpl:2dvalue_0_0 = "2017-02-27T12:44:40" %% xsd:dateTime])
+entity(var:source,[tmpl:value_0 = 'exe:Seminar@1f89ab83_1'])
+entity(var:target,[tmpl:value_0 = 'exe:Seminar@1f89ab83_2'])
+entity(var:Performing,[tmpl:value_0 = 'exe:Performing_1'])
+entity(var:object,[tmpl:value_0 = 'exe:Seminar@1f89ab83_0'])
+entity(var:lifeline,[tmpl:value_0 = 'exe:dataset.caseStudy.CS1Seminar.Student@'])
+entity(var:objectSMD,[tmpl:value_0 = 'exe:Seminar@1f89ab83'])
+endDocument

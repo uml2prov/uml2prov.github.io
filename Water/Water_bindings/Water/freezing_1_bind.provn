@@ -1,0 +1,18 @@
+document
+prefix tmpl <http://openprovenance.org/tmpl#>
+prefix var <http://openprovenance.org/var#>
+prefix exe <http://example.org/>
+entity(var:input0value,[tmpl:2dvalue_0_0 = "-10" %% xsd:string])
+entity(var:input0,[tmpl:value_0 = 'exe:Integer@1810399e_0'])
+entity(var:message,[tmpl:value_0 = 'exe:freezing_1'])
+entity(var:messageStartTime,[tmpl:2dvalue_0_0 = "2017-02-27T13:37:30" %% xsd:dateTime])
+entity(var:messageEndTime,[tmpl:2dvalue_0_0 = "2017-02-27T13:37:30" %% xsd:dateTime])
+entity(var:event,[tmpl:value_0 = 'exe:freezing_1'])
+entity(var:eventStartTime,[tmpl:2dvalue_0_0 = "2017-02-27T13:37:30" %% xsd:dateTime])
+entity(var:eventEndTime,[tmpl:2dvalue_0_0 = "2017-02-27T13:37:30" %% xsd:dateTime])
+entity(var:source,[tmpl:value_0 = 'exe:Water@5f8ed237_6'])
+entity(var:target,[tmpl:value_0 = 'exe:Water@5f8ed237_7'])
+entity(var:object,[tmpl:value_0 = 'exe:Water@5f8ed237_0'])
+entity(var:lifeline,[tmpl:value_0 = 'exe:dataset.caseStudy.CS2Water.Atmosphere@'])
+entity(var:objectSMD,[tmpl:value_0 = 'exe:Water@5f8ed237'])
+endDocument

@@ -1,0 +1,19 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.example.org/>
+prefix exe <http://example.org/>
+
+agent(exe:HallButton@2db0f6b2,[prov:type = 'u2p:HallButton'])
+entity(exe:HallButton@2db0f6b2_0,[prov:type = 'u2p:StateMachine'])
+wasAttributedTo(exe:HallButton@2db0f6b2_0, exe:HallButton@2db0f6b2)
+entity(exe:HallButton@2db0f6b2_4,[prov:type = 'u2p:HallButton', u2p:state = 'u2p:nolighted'])
+specializationOf(exe:HallButton@2db0f6b2_4,exe:HallButton@2db0f6b2_0)
+wasGeneratedBy(exe:HallButton@2db0f6b2_4,exe:press_1,-)
+wasDerivedFrom(exe:HallButton@2db0f6b2_4, exe:HallButton@2db0f6b2_3)
+entity(exe:HallButton@2db0f6b2_3,[prov:type = 'u2p:HallButton', u2p:state = 'u2p:nolighted'])
+wasInvalidatedBy(exe:HallButton@2db0f6b2_3,exe:press_1,-)
+activity(exe:press_1,2017-02-28T17:59:56.000+01:00,2017-02-28T17:59:56.000+01:00,[prov:type = 'u2p:press'])
+used(exe:press_1,exe:HallButton@2db0f6b2_3,-)
+specializationOf(exe:HallButton@2db0f6b2_3,exe:HallButton@2db0f6b2_0)
+endBundle
+endDocument

@@ -1,0 +1,15 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.org/>
+prefix exe <http://example.org/>
+
+entity(exe:String@6d78f375_0,[prov:value = "123456789" %% xsd:string])
+used(exe:call_1,exe:String@6d78f375_0,-,[prov:role = 'u2p:phoneNumber'])
+activity(exe:call_1,2017-02-27T17:17:53.000+01:00,2017-02-27T17:17:53.000+01:00,[prov:type = 'u2p:call'])
+agent(exe:dataset.caseStudy.CS4PhoneCall.User@,[prov:type = 'u2p:User'])
+wasAssociatedWith(exe:call_1,exe:dataset.caseStudy.CS4PhoneCall.User@,-)
+entity(exe:Boolean@1810399e_0,[prov:value = "true" %% xsd:string])
+wasGeneratedBy(exe:Boolean@1810399e_0,exe:call_1,-,[prov:role = 'u2p:response'])
+wasDerivedFrom(exe:Boolean@1810399e_0, exe:String@6d78f375_0)
+endBundle
+endDocument

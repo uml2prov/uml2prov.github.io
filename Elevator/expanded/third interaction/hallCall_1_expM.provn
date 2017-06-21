@@ -1,0 +1,19 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.example.org/>
+prefix exe <http://example.org/>
+
+agent(exe:HallButtonControl@2ef5e5e3,[prov:type = 'u2p:HallButtonControl'])
+entity(exe:HallButtonControl@2ef5e5e3_0,[prov:type = 'u2p:StateMachine'])
+wasAttributedTo(exe:HallButtonControl@2ef5e5e3_0, exe:HallButtonControl@2ef5e5e3)
+entity(exe:HallButtonControl@2ef5e5e3_3,[prov:type = 'u2p:HallButtonControl', u2p:state = 'u2p:On'])
+specializationOf(exe:HallButtonControl@2ef5e5e3_3,exe:HallButtonControl@2ef5e5e3_0)
+wasGeneratedBy(exe:HallButtonControl@2ef5e5e3_3,exe:hallCall_1,-)
+wasDerivedFrom(exe:HallButtonControl@2ef5e5e3_3, exe:HallButtonControl@2ef5e5e3_2)
+entity(exe:HallButtonControl@2ef5e5e3_2,[prov:type = 'u2p:HallButtonControl', u2p:state = 'u2p:Off'])
+wasInvalidatedBy(exe:HallButtonControl@2ef5e5e3_2,exe:hallCall_1,-)
+activity(exe:hallCall_1,2017-02-28T17:59:56.000+01:00,2017-02-28T17:59:56.000+01:00,[prov:type = 'u2p:hallCall'])
+used(exe:hallCall_1,exe:HallButtonControl@2ef5e5e3_2,-)
+specializationOf(exe:HallButtonControl@2ef5e5e3_2,exe:HallButtonControl@2ef5e5e3_0)
+endBundle
+endDocument

@@ -1,0 +1,16 @@
+document
+prefix tmpl <http://openprovenance.org/tmpl#>
+prefix var <http://openprovenance.org/var#>
+prefix exe <http://example.org/>
+entity(var:message,[tmpl:value_0 = 'exe:close_1'])
+entity(var:messageStartTime,[tmpl:2dvalue_0_0 = "2017-02-28T18:04:48" %% xsd:dateTime])
+entity(var:messageEndTime,[tmpl:2dvalue_0_0 = "2017-02-28T18:04:48" %% xsd:dateTime])
+entity(var:event,[tmpl:value_0 = 'exe:close_1'])
+entity(var:eventStartTime,[tmpl:2dvalue_0_0 = "2017-02-28T18:04:48" %% xsd:dateTime])
+entity(var:eventEndTime,[tmpl:2dvalue_0_0 = "2017-02-28T18:04:48" %% xsd:dateTime])
+entity(var:source,[tmpl:value_0 = 'exe:Door@2db0f6b2_1'])
+entity(var:target,[tmpl:value_0 = 'exe:Door@2db0f6b2_2'])
+entity(var:object,[tmpl:value_0 = 'exe:Door@2db0f6b2_0'])
+entity(var:lifeline,[tmpl:value_0 = 'exe:dataset.caseStudy.CS5ElevatorBis.DoorControl@'])
+entity(var:objectSMD,[tmpl:value_0 = 'exe:Door@2db0f6b2'])
+endDocument

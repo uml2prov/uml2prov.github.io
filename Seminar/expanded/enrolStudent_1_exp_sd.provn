@@ -1,0 +1,21 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.example.org/>
+prefix exe <http://example.org/>
+
+agent(exe:Seminar@1f89ab83,[prov:type = 'u2p:Seminar'])
+entity(exe:Seminar@1f89ab83_0,[prov:type = 'u2p:StateMachine'])
+wasAttributedTo(exe:Seminar@1f89ab83_0, exe:Seminar@1f89ab83)
+activity(exe:enrolStudent_1,2017-02-27T12:44:40.000+01:00,2017-02-27T12:44:40.000+01:00,[prov:type = 'u2p:enrolStudent'])
+entity(exe:Performing_1,[prov:type = 'u2p:Seminar', u2p:state = 'exe:Performing'])
+specializationOf(exe:Performing_1,exe:Seminar@1f89ab83_0)
+entity(exe:Seminar@1f89ab83_1,[prov:type = 'u2p:Seminar', u2p:state = 'exe:Enroling'])
+wasInvalidatedBy(exe:Seminar@1f89ab83_1,exe:enrolStudent_1,-)
+hadMember(exe:Performing_1,exe:Seminar@1f89ab83_1)
+used(exe:enrolStudent_1,exe:Seminar@1f89ab83_1,-)
+entity(exe:Seminar@1f89ab83_2,[prov:type = 'u2p:Seminar', u2p:state = 'exe:Enroling'])
+hadMember(exe:Performing_1,exe:Seminar@1f89ab83_2)
+wasGeneratedBy(exe:Seminar@1f89ab83_2,exe:enrolStudent_1,-)
+wasDerivedFrom(exe:Seminar@1f89ab83_2, exe:Seminar@1f89ab83_1)
+endBundle
+endDocument

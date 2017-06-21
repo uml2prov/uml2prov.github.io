@@ -1,0 +1,32 @@
+        
+       
+        
+                document
+                
+                prefix prov <http://www.w3.org/ns/prov#>
+                prefix tmpl <http://openprovenance.org/tmpl#>
+                prefix var <http://openprovenance.org/var#>
+                prefix exe <http://example.org/>
+                prefix u2p <http://uml2prov.example.org/>
+    
+                    bundle exe:bundle1
+                       agent(var:objectSMD, [prov:type='u2p:HallButton'])
+                entity(var:object, [prov:type='u2p:StateMachine'])
+                       wasAttributedTo(var:object, var:objectSMD, [])
+                       entity(var:target, [prov:type='u2p:HallButton' , u2p:state= 'u2p:lighted'])
+                       specializationOf(var:target,var:object)
+                       wasGeneratedBy(var:target, var:event, -)
+                       wasDerivedFrom(var:target,var:source)
+
+                
+                
+
+                        entity(var:source, [prov:type='u2p:HallButton' , u2p:state= 'u2p:nolighted'])
+                        wasInvalidatedBy(var:source, var:event, -)
+                        activity(var:event, [prov:type = 'u2p:turnOn', tmpl:startTime = 'var:eventStartTime', tmpl:endTime = 'var:eventEndTime' ])
+                        used(var:event, var:source, -)
+                        specializationOf(var:source,var:object)
+                    endBundle
+                endDocument
+            
+        

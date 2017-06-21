@@ -1,0 +1,13 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.org/>
+prefix var <http://openprovenance.org/var#>
+prefix exe <http://example.org/>
+
+entity(var:input0)
+used(exe:sublimation_1,var:input0,-,[prov:role = 'u2p:temp'])
+activity(exe:sublimation_1,2017-02-27T12:53:14.000+01:00,2017-02-27T12:53:14.000+01:00,[prov:type = 'u2p:sublimation'])
+agent(exe:dataset.caseStudy.CS2Water.Atmosphere@,[prov:type = 'u2p:atmosphere'])
+wasAssociatedWith(exe:sublimation_1,exe:dataset.caseStudy.CS2Water.Atmosphere@,-)
+endBundle
+endDocument

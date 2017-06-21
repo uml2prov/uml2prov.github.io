@@ -1,0 +1,13 @@
+document
+bundle exe:bundle1
+prefix var <http://openprovenance.org/var#>
+prefix u2p <http://uml2prov.org/>
+prefix exe <http://example.org/>
+
+activity(exe:close_1,2017-02-28T18:04:48.000+01:00,2017-02-28T18:04:48.000+01:00,[prov:type = 'u2p:close'])
+agent(exe:dataset.caseStudy.CS5ElevatorBis.DoorControl@,[prov:type = 'u2p:DoorControl'])
+wasAssociatedWith(exe:close_1,exe:dataset.caseStudy.CS5ElevatorBis.DoorControl@,-)
+entity(var:output0)
+wasGeneratedBy(var:output0,exe:close_1,-,[prov:role = 'u2p:isClosed'])
+endBundle
+endDocument

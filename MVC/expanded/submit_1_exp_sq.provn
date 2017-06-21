@@ -1,0 +1,12 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.org/>
+prefix exe <http://example.org/>
+
+entity(exe:String@6a38e57f_0,[prov:value = "ahio@example.com" %% xsd:string])
+used(exe:submit_1,exe:String@6a38e57f_0,-,[prov:role = 'u2p:email'])
+activity(exe:submit_1,2017-02-24T13:02:15.000+01:00,2017-02-24T13:02:15.000+01:00,[prov:type = 'u2p:submit'])
+agent(exe:User@825442679,[prov:type = 'u2p:Lifeline'])
+wasAssociatedWith(exe:submit_1,exe:User@825442679,-)
+endBundle
+endDocument

@@ -1,0 +1,12 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.org/>
+prefix exe <http://example.org/>
+
+entity(exe:Seminar@1f89ab83_0,[prov:value = "dataset.caseStudy.CS1Seminar.Seminar@1f89ab83" %% xsd:string])
+used(exe:setSeminarHistory_1,exe:Seminar@1f89ab83_0,-,[prov:role = 'u2p:seminar'])
+activity(exe:setSeminarHistory_1,2017-02-27T12:44:40.000+01:00,2017-02-27T12:44:40.000+01:00,[prov:type = 'u2p:setSeminarHistory'])
+agent(exe:dataset.caseStudy.CS1Seminar.Seminar@,[prov:type = 'u2p:Course'])
+wasAssociatedWith(exe:setSeminarHistory_1,exe:dataset.caseStudy.CS1Seminar.Seminar@,-)
+endBundle
+endDocument

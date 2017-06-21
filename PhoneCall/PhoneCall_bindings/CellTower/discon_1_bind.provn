@@ -1,0 +1,16 @@
+document
+prefix tmpl <http://openprovenance.org/tmpl#>
+prefix var <http://openprovenance.org/var#>
+prefix exe <http://example.org/>
+entity(var:message,[tmpl:value_0 = 'exe:disconnect_1'])
+entity(var:messageStartTime,[tmpl:2dvalue_0_0 = "2017-02-27T17:17:53" %% xsd:dateTime])
+entity(var:messageEndTime,[tmpl:2dvalue_0_0 = "2017-02-27T17:17:53" %% xsd:dateTime])
+entity(var:event,[tmpl:value_0 = 'exe:disconnect_1'])
+entity(var:eventStartTime,[tmpl:2dvalue_0_0 = "2017-02-27T17:17:53" %% xsd:dateTime])
+entity(var:eventEndTime,[tmpl:2dvalue_0_0 = "2017-02-27T17:17:53" %% xsd:dateTime])
+entity(var:source,[tmpl:value_0 = 'exe:CellTower@5f375618_2'])
+entity(var:target,[tmpl:value_0 = 'exe:CellTower@5f375618_3'])
+entity(var:object,[tmpl:value_0 = 'exe:CellTower@5f375618_0'])
+entity(var:lifeline,[tmpl:value_0 = 'exe:dataset.caseStudy.CS4PhoneCall.Phone@'])
+entity(var:objectSMD,[tmpl:value_0 = 'exe:CellTower@5f375618'])
+endDocument

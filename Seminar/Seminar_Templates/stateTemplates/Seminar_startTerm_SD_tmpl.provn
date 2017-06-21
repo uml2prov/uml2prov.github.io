@@ -1,0 +1,48 @@
+
+        document
+        
+                prefix prov <http://www.w3.org/ns/prov#>
+                prefix tmpl <http://openprovenance.org/tmpl#>
+                prefix var <http://openprovenance.org/var#>
+                prefix exe <http://example.org/>
+                prefix u2p <http://uml2prov.example.org/>
+    
+        bundle exe:bundle1
+
+            agent(var:objectSMD, [prov:type='u2p:Seminar'])
+            entity(var:object, [prov:type='u2p:StateMachine'])
+            wasAttributedTo(var:object, var:objectSMD, [])
+
+        
+        
+
+                activity(var:event, [prov:type = 'u2p:startTerm', tmpl:startTime = 'var:eventStartTime', tmpl:endTime = 'var:eventEndTime' ])
+
+
+                
+                
+                    entity(var:Performing, [prov:type='u2p:Seminar', u2p:state='exe:Performing'])
+                    specializationOf(var:Performing,var:object)
+                
+                    entity(var:source, [prov:type='u2p:Seminar' , u2p:state='exe:Enroling'])
+                    wasInvalidatedBy(var:source, var:event, -)
+
+                    hadMember(var:Performing, var:source)
+                    used(var:event, var:source, -)
+
+
+                
+                    
+                        entity(var:target, [prov:type='u2p:Seminar' ,u2p:state='exe:Studing'])
+                        hadMember(var:Performing, var:target)
+                        wasGeneratedBy(var:target, var:event, -)
+                        
+
+
+                
+                        wasDerivedFrom(var:target,var:source)
+                
+        endBundle
+        endDocument
+        
+

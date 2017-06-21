@@ -1,0 +1,19 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.example.org/>
+prefix exe <http://example.org/>
+
+agent(exe:CarPositionIndicator@2ef5e5e3,[prov:type = 'u2p:CarPositionIndicator'])
+entity(exe:CarPositionIndicator@2ef5e5e3_0,[prov:type = 'u2p:StateMachine'])
+wasAttributedTo(exe:CarPositionIndicator@2ef5e5e3_0, exe:CarPositionIndicator@2ef5e5e3)
+entity(exe:CarPositionIndicator@2ef5e5e3_2,[prov:type = 'u2p:CarPositionIndicator', u2p:state = 'u2p:IndicatingCurrentFloor'])
+specializationOf(exe:CarPositionIndicator@2ef5e5e3_2,exe:CarPositionIndicator@2ef5e5e3_0)
+wasGeneratedBy(exe:CarPositionIndicator@2ef5e5e3_2,exe:indicateCurrentFloor_1,-)
+wasDerivedFrom(exe:CarPositionIndicator@2ef5e5e3_2, exe:CarPositionIndicator@2ef5e5e3_1)
+entity(exe:CarPositionIndicator@2ef5e5e3_1,[prov:type = 'u2p:CarPositionIndicator', u2p:state = 'u2p:Indicatingnothing'])
+wasInvalidatedBy(exe:CarPositionIndicator@2ef5e5e3_1,exe:indicateCurrentFloor_1,-)
+activity(exe:indicateCurrentFloor_1,2017-02-28T18:04:48.000+01:00,2017-02-28T18:04:48.000+01:00,[prov:type = 'u2p:indicateCurrentFloor'])
+used(exe:indicateCurrentFloor_1,exe:CarPositionIndicator@2ef5e5e3_1,-)
+specializationOf(exe:CarPositionIndicator@2ef5e5e3_1,exe:CarPositionIndicator@2ef5e5e3_0)
+endBundle
+endDocument

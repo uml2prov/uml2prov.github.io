@@ -1,0 +1,20 @@
+document
+prefix tmpl <http://openprovenance.org/tmpl#>
+prefix var <http://openprovenance.org/var#>
+prefix exe <http://example.org/>
+entity(var:input0value,[tmpl:2dvalue_0_0 = "123456789" %% xsd:string])
+entity(var:input0,[tmpl:value_0 = 'exe:String@6d78f375_0'])
+entity(var:output0value,[tmpl:2dvalue_0_0 = "true" %% xsd:string])
+entity(var:output0,[tmpl:value_0 = 'exe:Boolean@50c87b21_0'])
+entity(var:message,[tmpl:value_0 = 'exe:connect_1'])
+entity(var:messageStartTime,[tmpl:2dvalue_0_0 = "2017-02-27T17:17:53" %% xsd:dateTime])
+entity(var:messageEndTime,[tmpl:2dvalue_0_0 = "2017-02-27T17:17:53" %% xsd:dateTime])
+entity(var:event,[tmpl:value_0 = 'exe:connect_1'])
+entity(var:eventStartTime,[tmpl:2dvalue_0_0 = "2017-02-27T17:17:53" %% xsd:dateTime])
+entity(var:eventEndTime,[tmpl:2dvalue_0_0 = "2017-02-27T17:17:53" %% xsd:dateTime])
+entity(var:source,[tmpl:value_0 = 'exe:CellTower@5f375618_1'])
+entity(var:target,[tmpl:value_0 = 'exe:CellTower@5f375618_2'])
+entity(var:object,[tmpl:value_0 = 'exe:CellTower@5f375618_0'])
+entity(var:lifeline,[tmpl:value_0 = 'exe:dataset.caseStudy.CS4PhoneCall.Phone@'])
+entity(var:objectSMD,[tmpl:value_0 = 'exe:CellTower@5f375618'])
+endDocument

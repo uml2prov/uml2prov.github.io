@@ -1,0 +1,19 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.example.org/>
+prefix exe <http://example.org/>
+
+agent(exe:Controller@23ceabc1,[prov:type = 'u2p:Controller'])
+entity(exe:Controller@23ceabc1_0,[prov:type = 'u2p:StateMachine'])
+wasAttributedTo(exe:Controller@23ceabc1_0, exe:Controller@23ceabc1)
+entity(exe:Controller@23ceabc1_2,[prov:type = 'u2p:Controller', u2p:state = 'u2p:Registered'])
+specializationOf(exe:Controller@23ceabc1_2,exe:Controller@23ceabc1_0)
+wasGeneratedBy(exe:Controller@23ceabc1_2,exe:register_1,-)
+wasDerivedFrom(exe:Controller@23ceabc1_2, exe:Controller@23ceabc1_1)
+entity(exe:Controller@23ceabc1_1,[prov:type = 'u2p:Controller', u2p:state = 'u2p:Not'])
+wasInvalidatedBy(exe:Controller@23ceabc1_1,exe:register_1,-)
+activity(exe:register_1,2017-02-24T13:02:15.000+01:00,2017-02-24T13:02:15.000+01:00,[prov:type = 'u2p:register'])
+used(exe:register_1,exe:Controller@23ceabc1_1,-)
+specializationOf(exe:Controller@23ceabc1_1,exe:Controller@23ceabc1_0)
+endBundle
+endDocument

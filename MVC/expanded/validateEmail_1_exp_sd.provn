@@ -1,0 +1,19 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.example.org/>
+prefix exe <http://example.org/>
+
+agent(exe:View@4141d797,[prov:type = 'u2p:View'])
+entity(exe:View@4141d797_0,[prov:type = 'u2p:StateMachine'])
+wasAttributedTo(exe:View@4141d797_0, exe:View@4141d797)
+entity(exe:View@4141d797_2,[prov:type = 'u2p:View', u2p:state = 'u2p:ValidEmail'])
+specializationOf(exe:View@4141d797_2,exe:View@4141d797_0)
+wasGeneratedBy(exe:View@4141d797_2,exe:validateEmail_1,-)
+wasDerivedFrom(exe:View@4141d797_2, exe:View@4141d797_1)
+entity(exe:View@4141d797_1,[prov:type = 'u2p:View', u2p:state = 'u2p:NotValidEmail'])
+wasInvalidatedBy(exe:View@4141d797_1,exe:validateEmail_1,-)
+activity(exe:validateEmail_1,2017-02-24T13:02:15.000+01:00,2017-02-24T13:02:15.000+01:00,[prov:type = 'u2p:validateEmail'])
+used(exe:validateEmail_1,exe:View@4141d797_1,-)
+specializationOf(exe:View@4141d797_1,exe:View@4141d797_0)
+endBundle
+endDocument

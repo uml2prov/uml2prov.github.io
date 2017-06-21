@@ -1,0 +1,17 @@
+includeAssociatedSeminar,includeAssociatedSeminar_Seminar2Course_SQ_tmpl.provn,SQ
+setSeminarHistory,setSeminarHistory_Course2Student_SQ_tmpl.provn,SQ
+enrolStudent,enrolStudent_Student2Seminar_SQ_tmpl.provn,SQ
+skipClass,Seminar_skipClass_SD_tmpl.provn,SD
+initNotEnroled,Student_initNotEnroled_SD_tmpl.provn,SD
+initEnroling,Seminar_initEnroling_SD_tmpl.provn,SD
+setSeminarHistory,Student_setSeminarHistory_SD_tmpl.provn,SD
+initPerforming,Seminar_initPerforming_SD_tmpl.provn,SD
+enrolStudent,Seminar_enrolStudent_SD_tmpl.provn,SD
+enrol,Student_enrol_SD_tmpl.provn,SD
+startTerm,Seminar_startTerm_SD_tmpl.provn,SD
+cancel,Seminar_cancel_SD_tmpl.provn,SD
+endCourse,Course_endCourse_SD_tmpl.provn,SD
+initIdle,Course_initIdle_SD_tmpl.provn,SD
+endClasses,Seminar_endClasses_SD_tmpl.provn,SD
+startCourse,Course_startCourse_SD_tmpl.provn,SD
+close,Seminar_close_SD_tmpl.provn,SD

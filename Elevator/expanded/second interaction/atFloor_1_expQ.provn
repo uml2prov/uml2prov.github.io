@@ -1,0 +1,10 @@
+document
+bundle exe:bundle1
+prefix u2p <http://uml2prov.org/>
+prefix exe <http://example.org/>
+
+activity(exe:atFloor_1,2017-02-28T18:02:07.000+01:00,2017-02-28T18:02:07.000+01:00,[prov:type = 'u2p:atFloor'])
+agent(exe:dataset.Principal@,[prov:type = 'u2p:Drive'])
+wasAssociatedWith(exe:atFloor_1,exe:dataset.Principal@,-)
+endBundle
+endDocument
