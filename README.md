@@ -49,7 +49,7 @@ them using natural language, mathematical-based formulas, or a
 mixture of them. In contrast, we have decided to provide such
 considerations as well-formedness rules expressed in OCL, in order
 to be coherent with the way in which UML defines its semantics.
-ese constraints (from OCL1 to OCL5) mainly impose interconnections
+These constraints (from OCL1 to OCL5) mainly impose interconnections
 among (OCL1 and OCL2) senders/receivers in SqD and objects
 modelled by SMD, (OCL3 and OCL4) incoming/outgoing messages in
 SqD with events/actions in SMD, and (OCL5) incoming messages in
