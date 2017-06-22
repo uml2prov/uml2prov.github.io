@@ -12,15 +12,15 @@ Such a case study has been modelled through the following UML Sequence and State
 
 ## UML Sequence diagrams
 
-![](https://github.com/uml2prov/uml2prov.github.io/blob/master/Seminar/UML%20diagrams/sequenceDiagrams/enrol%20Student.png "Enrol student UML Sequence diagram")
+![](https://uml2prov.github.io/Seminar/UML%20diagrams/sequenceDiagrams/enrol%20Student.png "Enrol student UML Sequence diagram")
 
 ## UML State Machine diagrams
 
 ### Course UML State Machine diagram
-![](https://github.com/uml2prov/uml2prov.github.io/blob/master/Seminar/UML%20diagrams/statemachineDiagrams/Course.png "Course UML State Machine diagram")
+![](https://uml2prov.github.io/Seminar/UML%20diagrams/statemachineDiagrams/Course.png "Course UML State Machine diagram")
 
 ### Seminar UML State Machine diagram
-![](https://github.com/uml2prov/uml2prov.github.io/blob/master/Seminar/UML%20diagrams/statemachineDiagrams/Seminar.png "Seminar UML State Machine diagram")
+![](https://uml2prov.github.io/Seminar/UML%20diagrams/statemachineDiagrams/Seminar.png "Seminar UML State Machine diagram")
 
 ### Student UML State Machine diagram
-![](https://github.com/uml2prov/uml2prov.github.io/blob/master/Seminar/UML%20diagrams/statemachineDiagrams/Student.png "Student UML State Machine diagram")
+![](https://uml2prov.github.io/Seminar/UML%20diagrams/statemachineDiagrams/Student.png "Student UML State Machine diagram")
