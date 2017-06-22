@@ -3,9 +3,9 @@
 This case study is concerned with a system that manages a elevator system. 
 Here, we provide the following suplementary material:
  1. [The UML diagrams used to model the case study](https://uml2prov.github.io/Elevator/readme.md#uml-sequence-diagrams)
- 2. [The provenance templates generated](https://uml2prov.github.io/Elevator/Elevator_Templates) 
- 3. [The set of bindings extracted from the execution](https://uml2prov.github.io/Elevator/Elevator_bindings)
- 4. [For each binding, its expansion in SVG and PROVN format](https://uml2prov.github.io/Elevator/expanded)
+ 2. [The provenance templates generated](https://github.com/uml2prov/uml2prov.github.io/tree/master/Elevator/Elevator_Templates) 
+ 3. [The set of bindings extracted from the execution](https://github.com/uml2prov/uml2prov.github.io/tree/master/Elevator/Elevator_bindings)
+ 4. [For each binding, its expansion in SVG and PROVN format](https://github.com/uml2prov/uml2prov.github.io/tree/master/Elevator/expanded)
 
 Such a case study has been modelled through the following UML Sequence and State Machine Diagrams.
 
