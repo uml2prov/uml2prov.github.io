@@ -11,7 +11,7 @@ Such a case study has been modelled through the following UML Sequence and State
 
 ## UML Sequence diagrams
 
-![](https://github.com/uml2prov/uml2prov.github.io/blob/master/MVC/UML%20diagrams/sequenceDiagrams/AddUser.png "Add user UML Sequence diagram")
+![](https://uml2prov.github.io/MVC/UML%20diagrams/sequenceDiagrams/AddUser.png "Add user UML Sequence diagram")
 
 ## UML State Machine diagrams
 
