@@ -1,3 +1,9 @@
+# TSE - Suplementary Material
+This document contains supplementary material for the paper entitled ''Towards a framework for making applications provenance-aware''.
+
+* [PDF file](https://uml2prov.github.io/tse_sm.pdf)
+
+
 # IPAW 2018 - Online Appendix
 
 We present the online appendix of the paper entitled "Automating Provenance Capture in Software Engineering with UML2PROV" submitted to the 7th International Provenance and Annotation Workshop. July 9 - July 13, 2018 | London, United Kingdom.
