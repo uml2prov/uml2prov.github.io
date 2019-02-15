@@ -1,7 +1,7 @@
 # TSE - Suplementary Material
 This document contains supplementary material for the paper entitled ''Towards a framework for making applications provenance-aware''.
 
-* [PDF file](https://uml2prov.github.io/tse_sm.pdf)
+* [Description of the transformation patterns](https://uml2prov.github.io/tse_tp.pdf)
 
 
 # IPAW 2018 - Online Appendix
