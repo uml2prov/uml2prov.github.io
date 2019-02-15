@@ -2,6 +2,7 @@
 This document contains supplementary material for the paper entitled ''Towards a framework for making applications provenance-aware''.
 
 * [Description of the transformation patterns](https://uml2prov.github.io/tse_tp.pdf)
+* [Taxonomy of operations](https://uml2prov.github.io/operationsTaxonomy.pdf) -- Document not completed yet
 
 
 # IPAW 2018 - Online Appendix
