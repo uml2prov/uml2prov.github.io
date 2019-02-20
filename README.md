@@ -3,6 +3,9 @@ This document contains supplementary material for the paper entitled ''Towards a
 
 * [Description of the transformation patterns](https://uml2prov.github.io/tse_tp.pdf)
 * [Taxonomy of operations](https://uml2prov.github.io/operationsTaxonomy.pdf) -- Document not completed yet
+* [Chain of interactions with GelJ](https://uml2prov.github.io/chainOfsteps.pdf) 
+
+
 
 
 # IPAW 2018 - Online Appendix
