@@ -1,11 +1,11 @@
 # TSE - Suplementary Material
 This document contains supplementary material for the paper entitled ''Towards a framework for making applications provenance-aware''.
 
-* [OCL Constraints](https://uml2prov.github.io/OCLRules)
 * [Description of the transformation patterns](https://uml2prov.github.io/tse_tp.pdf)
-* [Table depicting the taxonomy of operations](https://uml2prov.github.io/operationsTaxonomy.pdf)
 * [Implementation details](https://uml2prov.github.io/Implementation_Details.pdf)
+* [Table depicting the taxonomy of operations](https://uml2prov.github.io/operationsTaxonomy.pdf)
 * [Chain of interactions with GelJ](https://uml2prov.github.io/chainOfsteps.pdf) 
+* [OCL Constraints](https://uml2prov.github.io/OCLRules)
 
 
 
