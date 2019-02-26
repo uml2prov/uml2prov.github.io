@@ -4,7 +4,7 @@ This document contains supplementary material for the paper entitled ''Towards a
 * [OCL Constraints](https://uml2prov.github.io/OCLRules)
 * [Description of the transformation patterns](https://uml2prov.github.io/tse_tp.pdf)
 * [Taxonomy of operations](https://uml2prov.github.io/operationsTaxonomy.pdf) -- Document not completed yet
-* [Implementation details]() -- In process
+* [Implementation details](https://uml2prov.github.io/Implementation_Details.pdf) -- In process
 * [Chain of interactions with GelJ](https://uml2prov.github.io/chainOfsteps.pdf) 
 
 
