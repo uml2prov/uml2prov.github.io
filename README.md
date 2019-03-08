@@ -6,6 +6,7 @@ This document contains supplementary material for the paper entitled ''Towards a
 * [Table depicting the taxonomy of operations](https://uml2prov.github.io/operationsTaxonomy.pdf)
 * [Chain of interactions with GelJ](https://uml2prov.github.io/chainOfsteps.pdf) 
 * [OCL Constraints](https://uml2prov.github.io/OCLRules)
+* [The UML2PROV namespace](https://uml2prov.github.io/ns.htm)
 
 
 
