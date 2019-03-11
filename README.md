@@ -3,7 +3,7 @@ This document contains supplementary material for the paper entitled ''Towards a
 
 * [Description of the transformation patterns](https://uml2prov.github.io/tse_tp.pdf)
 * [Implementation details](https://uml2prov.github.io/Implementation_Details.pdf)
-* [Table depicting the taxonomy of operations](https://uml2prov.github.io/operationsTaxonomy.pdf)
+* [Taxonomy of operations](https://uml2prov.github.io/Taxonomy.pdf)
 * [Chain of interactions with GelJ](https://uml2prov.github.io/chainOfsteps.pdf) 
 * [OCL Constraints](https://uml2prov.github.io/OCLRules)
 * [The UML2PROV namespace](https://uml2prov.github.io/namespace.htm)
