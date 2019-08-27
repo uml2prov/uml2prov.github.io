@@ -1,4 +1,4 @@
-# TSE - Suplementary Material
+<!-- # TSE - Suplementary Material
 This document contains supplementary material for the paper entitled ''Towards a framework for making applications provenance-aware''.
 
 * [Description of the transformation patterns](https://uml2prov.github.io/tse_tp.pdf)
@@ -7,10 +7,10 @@ This document contains supplementary material for the paper entitled ''Towards a
 * [Chain of interactions with GelJ](https://uml2prov.github.io/chainOfsteps.pdf) 
 * [OCL Constraints](https://uml2prov.github.io/OCLRules)
 * [The UML2PROV namespace](https://uml2prov.github.io/namespace.htm)
+-->
 
 
 
-<!-- 
 # IPAW 2018 - Online Appendix
 
 We present the online appendix of the paper entitled "Automating Provenance Capture in Software Engineering with UML2PROV" submitted to the 7th International Provenance and Annotation Workshop. July 9 - July 13, 2018 | London, United Kingdom.
@@ -25,4 +25,4 @@ In this page, we present supporting material of the paper entitled "UML2PROV: Au
 * [OCL Constraints](https://uml2prov.github.io/OCLRules)
 * [Translation rules](https://uml2prov.github.io/transformations)
 * [Evaluation dataset](https://uml2prov.github.io/evaluationDataset)
--->
+
